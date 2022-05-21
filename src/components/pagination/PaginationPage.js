@@ -3,17 +3,16 @@ import Pagination from '@mui/material/Pagination';
 
 
 const PaginationPage = ({totalRepositories, changePage, pageNum}) => {
-    const {page, perPage} = pageNum;
 
+    const {page, perPage} = pageNum;
     const countPage = Math.ceil(totalRepositories / perPage);
 
     function handlerPage(num) {
-        //setPage(num)
         changePage(num)
     }
 
-    console.log('totalRepositories --', totalRepositories);
-    console.log('num page --', page);
+    // console.log('totalRepositories --', totalRepositories);
+    // console.log('num page --', page);
 
     return (
         <div className="pagination">

@@ -1,17 +1,32 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import "./User.css";
 import UserCard from "../user-card/UserCard";
 import RepositoryList from "../repositoryes-list/RepositoryList";
 import PaginationPage from "../pagination/PaginationPage";
 import SearchStart from "../search-start/SearchStart";
 import contentIsEmpty from "../../assets/epty-repos-list.png"
+import {UsersService} from "../../api/GetUsers";
 
-const User = ({userInfo, repositories, changePage, pageNum}) => {
+const User = ({userInfo, userName}) => {
+
+    const [repositories, setRepositories] = useState([]);
+    const [pageNum, setPageNum] = useState({page:1, perPage:4});
+    function changePage(page) {
+        setPageNum({...pageNum, page:page})
+    }
+
+
+    useEffect(() => {
+            getPage(userName,pageNum)
+    }, [pageNum])
+
+    async function getPage(userNameSearch, page) {
+        const getPageAndRepos = await UsersService.getPages(userNameSearch, page.page, page.perPage)
+        setRepositories(getPageAndRepos)
+    }
 
     const {public_repos} = userInfo;
     const repos = [...repositories];
-    console.log("repos --", repos);
-    console.log("userInfo --", userInfo);
 
     return (
         <div className="user">
