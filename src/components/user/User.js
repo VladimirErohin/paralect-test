@@ -8,7 +8,6 @@ import contentIsEmpty from "../../assets/epty-repos-list.png"
 import {UsersService} from "../../api/GetUsers";
 
 const User = ({userInfo, userName}) => {
-    const user = userName;
     const [repositories, setRepositories] = useState([]);
     const [pageNum, setPageNum] = useState({page:1, perPage:4});
     function changePage(page) {
@@ -17,8 +16,8 @@ const User = ({userInfo, userName}) => {
 
 
     useEffect(() => {
-            getPage(user,pageNum)
-    }, [pageNum])
+            getPage(userName,pageNum)
+    }, [pageNum,userName])
 
     async function getPage(userNameSearch, page) {
         const getPageAndRepos = await UsersService.getPages(userNameSearch, page.page, page.perPage)
