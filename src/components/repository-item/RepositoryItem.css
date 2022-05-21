@@ -1,6 +1,4 @@
 .repository__item{
-    /*height: 112px;*/
-    /*width: 100%;*/
     border-radius: 6px;
     padding: 24px 32px;
     background: #FFFFFF;
@@ -22,20 +20,7 @@
 }
 
 @media screen and (max-width: 940px) {
-
     .repository__item{
-        border: 1px solid deepskyblue;
-        /*margin: auto;*/
         width: 100%;
     }
-
-    /*.order .order_description {*/
-    /*    padding: .3rem;*/
-    /*    line-height: 20px;*/
-    /*}*/
-
-    /*.order img {*/
-    /*    width: 100%;*/
-    /*    height: 50%;*/
-    /*}*/
 }

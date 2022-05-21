@@ -3,7 +3,6 @@
 }
 
 .user__info {
-    border: 1px solid red;
     display: flex;
     width: 100%;
     padding: 0 56px;
@@ -12,17 +11,13 @@
 }
 .content__user{
     display: flex;
-    width: 100%;
+    width: 100vw;
     flex-direction: column;
     justify-content: space-between;
 }
 
-/*repositories__info*/
-
 .repositories__list{
-    border: 1px solid deepskyblue;
     margin-left: 98px;
-    /*width: 100%;*/
 }
 
 .repos__title {
@@ -38,12 +33,10 @@
 .pagination{
     display: flex;
     justify-content: flex-end;
-    /*padding-right: 4rem;*/
 }
 
 @media screen and (max-width: 940px) {
     .user__info {
-        border: 1px solid red;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -52,18 +45,20 @@
     }
 
     .repositories__list {
-        border: 1px solid deepskyblue;
         margin: auto;
+        padding: 0 1rem;
     }
 
     .pagination {
         display: flex;
-        width: 113vw;
         align-items: center;
-        padding-right: 4rem;
     }
 
     .repos__title {
         margin: 29px 0;
+    }
+
+    .content__user {
+        width: 100vw;
     }
 }
