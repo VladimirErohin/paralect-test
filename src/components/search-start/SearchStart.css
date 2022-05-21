@@ -25,3 +25,9 @@
 .start__search-content img{
     margin-bottom: 48px;
 }
+
+@media screen and (max-width: 940px) {
+    .start__search-content {
+       padding: 2rem;
+    }
+}
