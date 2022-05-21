@@ -11,9 +11,6 @@ const PaginationPage = ({totalRepositories, changePage, pageNum}) => {
         changePage(num)
     }
 
-    // console.log('totalRepositories --', totalRepositories);
-    // console.log('num page --', page);
-
     return (
         <div className="pagination">
             <Pagination
