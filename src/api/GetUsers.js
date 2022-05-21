@@ -12,8 +12,8 @@ export class UsersService{
             //.catch(e=>e)
         return response
     }
-    static async  getPages(userName, page) {
-        const response = await fetch(`https://api.github.com/users/${userName}/repos?per_page=4&page=${page}`)
+    static async  getPages(userName, page, perPage) {
+        const response = await fetch(`https://api.github.com/users/${userName}/repos?per_page=${perPage}&page=${page}`)
             .then(pages => pages.json())
             .then(pages =>pages)
         return response

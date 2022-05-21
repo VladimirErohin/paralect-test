@@ -25,7 +25,7 @@ function App() {
     async function getUserName(userNameSearch, page) {
         //const getRepositories = await UsersService.getListRepositories(userNameSearch)
         const getUserInfo = await UsersService.getUser(userNameSearch)
-        const getPageAndRepos = await UsersService.getPages(userNameSearch, page)
+        const getPageAndRepos = await UsersService.getPages(userNameSearch, page.page, page.perPage)
         //setRepositories(getRepositories)
         setRepositories(getPageAndRepos)
         setUserinfo(getUserInfo)
