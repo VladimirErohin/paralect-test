@@ -52,7 +52,7 @@
     .pagination {
         display: flex;
         align-items: center;
-        padding: 0.8rem;
+        padding: 1rem 0;
     }
 
     .repos__title {
