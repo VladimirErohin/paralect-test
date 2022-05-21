@@ -1,0 +1,42 @@
+.user{
+    width: 100%;
+}
+
+.user__info {
+    border: 1px solid red;
+    display: flex;
+    width: 100%;
+    padding: 0 56px;
+
+    height: 86vh;
+}
+.content__user{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*repositories__info*/
+
+.repositories__list{
+    border: 1px solid deepskyblue;
+    margin-left: 98px;
+    /*width: 100%;*/
+}
+
+.repos__title {
+    margin-bottom: 29px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #000000;
+}
+
+.pagination{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 4rem;
+}

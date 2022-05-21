@@ -1,0 +1,32 @@
+.start__search {
+    /*border: 1px solid red;*/
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    /*margin: auto;*/
+    width: 210px;
+    height: 196px;
+}
+
+.text__search {
+    color: #808080;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 31px;
+    text-align: center;
+}
+
+.start__search-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 210px;
+    height: 196px;
+}
+
+.start__search-content img{
+    margin-bottom: 48px;
+}

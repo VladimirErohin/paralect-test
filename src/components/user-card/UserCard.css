@@ -1,0 +1,45 @@
+.user__card{
+    border: 1px solid green;
+}
+
+.user__avatar {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.full__name {
+    margin-top: 29px;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #000000
+}
+
+.login__user {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #0064EB;
+}
+
+.subscribers__info{
+    margin-top: 30px;
+    display: flex;
+}
+
+.followers{
+    margin-left: 9px;
+    margin-right: 20px;
+}
+
+.following{
+    margin-left: 9px;
+}
+
